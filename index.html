@@ -247,6 +247,39 @@
             background: rgba(255, 255, 255, 0.1);
             border-color: rgba(255, 255, 255, 0.2);
         }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: left;
+            color: #ffffff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .pricing-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.8rem;
+        }
+        .price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 1rem 0;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+        }
+        .pricing-card li {
+            margin-bottom: 0.6rem;
+            color: #cccccc;
+        }
         .contact {
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
@@ -354,6 +387,40 @@
             <div class="skill-card">
                 <h3>Website Security</h3>
                 <p>Secure development and vulnerability assessment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Business Website</h3>
+                <div class="price">$400 USD</div>
+                <ul>
+                    <li>• Modern responsive design</li>
+                    <li>• Contact form & CTA sections</li>
+                    <li>• Fast loading and secure setup</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>E-commerce Website</h3>
+                <div class="price">$600 USD</div>
+                <ul>
+                    <li>• Product pages and cart flow</li>
+                    <li>• Payment integration ready</li>
+                    <li>• Clean storefront experience</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h3>SEO & Social Media Marketing</h3>
+                <div class="price">$200 USD</div>
+                <ul>
+                    <li>• SEO optimization setup</li>
+                    <li>• Social media content direction</li>
+                    <li>• Better visibility and reach</li>
+                </ul>
             </div>
         </div>
     </section>
